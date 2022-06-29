@@ -1,0 +1,12 @@
+# Source: cluster-api-byoh/templates/byoh-machinetemplates-control-plane.yaml
+apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+kind: ByoMachineTemplate
+metadata:
+  name: 858b8385-control-plane
+  namespace: 858b8385
+spec:
+  template:
+    spec:
+      selector:
+        matchLabels:
+          role: control-plane
